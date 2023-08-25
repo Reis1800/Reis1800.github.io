@@ -1,0 +1,221 @@
+
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color:black;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;  
+ 
+}
+
+.banner {
+  background-image: url(img/Screenshot_4.png);
+  background-color: #f3f3f3;
+  background-size: 100%;
+  text-align: center; 
+  
+}
+
+.banner h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.banner p {
+  margin-top: 10px;
+}
+
+.banner button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #888686;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .top-bar h1 {
+    margin: 0;
+  }
+  
+ 
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #888686;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+  transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%; 
+  } 
+
+.funkos-page {
+    position:unset;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #888686; 
+    color: white;
+    text-align: center;
+    height: 600px; 
+    background-image: url(img/Screenshot_2.png);
+  }
+  
+  .funkos-page h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .funkos-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .textFunko{
+    font-family: 'Abel';
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+  }
+  
+  .imagemFunko{
+    margin: 3%;
+    width: 600px;
+    height: 310px;
+  }
+
+  .miniaturas-page {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f0f0f0; 
+    color: #333;
+    text-align: center;
+    height: 600px; 
+    background-image: url(img/wallpaper.jpg);
+    
+  }
+  
+  .miniaturas-page h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .miniaturas-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+   
+  }
+  
+  .imagemMiniatura {
+    margin: 3%;
+    width: 400px; 
+  }
+  
+  .textMiniatura {
+    position: relative;
+    font-family: 'Abel';
+    font-style: normal;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 50px; 
+    line-height: 50px;
+    color: #333;
+    margin-top: -30px;
+  }
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
+  
+  
+
+

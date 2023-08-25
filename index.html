@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action Brasil</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1> <li><a href="index.html"><img src="img/Action Brasil.png" alt="" width="300" height="45"></a></li></h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button>Pesquisar</button>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="pagina3 index.html"><img src="img/carrinho 1.png" alt=""width="30" height="30">
+            Carrinho</a></li>
+        <li><a href="pagina1 index.html"> <img src="img/usuario.png" alt=""width="30" height="30">
+            Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Bem-vindo ao Action Brasil!</h2>
+      <p>Explore o mundo de figuras colecionáveis!</p>
+      <section class="produtos">
+        <section class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="carousel-item">
+                  <img src="img/levi.png" alt="Produto 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/denji.png" alt="Produto 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/avenger.png" alt="Produto 3">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-buttons">
+              <button id="prevBtn">Anterior</button>
+              <button id="nextBtn">Próximo</button>
+            </div>
+          </section>
+          <button>Comprar Agora</button> </section>
+    <section class="produtos"> </section>
+    <section class="formulario"></section>
+  </main>
+<main>
+  <section class="banner"></section>
+  <section class="funkos-page" style="background-color: #888686; height: 600px;">
+    <h2>Coleção de Funkos Pop</h2>
+    <p>Explore nossa incrível coleção de Funkos Pop!</p>
+    <div class="funkos">
+      <a href="funkos.html">
+        <img class="imagemFunko" src="img/goku.jpg" alt="">
+        <h1 class="textFunko"> Funkos Pops </h1>
+      </a>
+    </div>
+  </section>
+  <section class="miniaturas-page">
+    <h2>Miniaturas Colecionáveis</h2>
+    <p>Confira nossa incrível coleção de miniaturas e figmas!</p>
+    <div class="miniaturas">
+      <a href="miniaturas.html">
+        <img class="imagemMiniatura" src="img/shinobu.png" alt=""> 
+        <h1 class="textMiniatura"> Miniaturas </h1>
+      </a>
+    </div>
+  </section>
+
+  <section class="formulario"></section>
+</main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Página Inicial </a></li>
+        <li><a href="quemsomos.html">Quem Somos 
+          Nós</a></li>
+        <li><a href="documentaçao.html">Documentação</a></li>
+        <li><a href="contato.html">contato</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023, Gabriel Reis</p>
+  </footer>
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+  
+    let currentItem = 0;
+  
+    function slideRight() {
+      currentItem = (currentItem + 1) % items.length;
+      updateCarousel();
+    }
+  
+    function slideLeft() {
+      currentItem = (currentItem - 1 + items.length) % items.length;
+      updateCarousel();
+    }
+  
+    function updateCarousel() {
+      const translateX = -currentItem * 100;
+      carousel.style.transform = `translateX(${translateX}%)`;
+    }
+  
+    nextBtn.addEventListener('click', slideRight);
+    prevBtn.addEventListener('click', slideLeft);
+  
+    setInterval(slideRight, 5000); 
+  </script>
+  
+</body>
+</html>

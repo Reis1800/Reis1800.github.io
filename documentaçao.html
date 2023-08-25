@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação</title>
+    <link rel="stylesheet" href="documentação.css">
+</head>
+<body>
+    <header>
+    <h1> <li><a href="index.html"><img src="img/Action Brasil.png" alt="" width="300" height="45"></a></li></h1>
+    <nav>
+      <ul>
+        <li><a href="pagina3 index.html"><img src="img/carrinho 1.png" alt=""width="30" height="30">
+            Carrinho</a></li>
+        <li><a href="pagina1 index.html"> <img src="img/usuario.png" alt=""width="30" height="30">
+            Login</a></li>
+      </ul>
+      </nav>
+    </header>
+   <h1 class="introducao"> Entenda como funciona o site Action Brasil</h1>
+    <p>Esta documentação tem como objetivo explicar brevemente o projeto do aplicativo/site desenvolvido em HTML e CSS.
+    </p>
+    <h1 class="objetivo"> Qual o nosso objetivo? </h1>
+   <p> nosso principal objetivo se trata na venda de figuras articuladas e colecionaveis, voltadas a principio ao publico
+    que aprecia as obras ficticias, sejam elas do japão como animes ou mangás ou de séries popularmentes conhecidas. em resumo
+    este site tem como foco o interesse de querer colecionar, seja para fins de decoração ou seja para outros meios
+   </p>
+    <h1 class="design"> A escolha do design </h1>
+    <p> em resumo, trabalhamos com cores de backgrounds em tonalidades escuras até os backgrounds mais claros, como por exemplo
+        nossas principais cores se baseiam em preto, cinza, vermelho, branco, dourado (em alguns casos). Além disso, usamos como padrão 
+        modelos de fonte do tipo "Arial, sans-serif;" e usarmos a estruturas voltadas ao centro da pagina seguindo este criterio display: flex;
+
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh; 
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.3); 
+        flex-direction: column;
+    </p>    
+    <h1 class="paginas">Divisão de paginas</h1>
+    <p> separamos nosso site Action Brasil no total de 7 paginas sendo elas </p>
+    <li><a href="index.html">Página Inicial </a></li>
+    <li><a href="pagina1 index.html">Login e Cadastro </a></li>
+    <li><a href="pagina3 index.html">Carrinho de Compras </a></li>
+    <li><a href="funkos.html">Seção de produtos relacionados aos Funko Pops </a></li>
+    <li><a href="miniaturas.html">Seção de produtos relacionados a Miniaturas colecionaveis</a></li>
+    <li><a href="contato.html">Página de entrar em contato conosco </a></li>
+    <li><a href="quemsomos.html">A Pagina de usuario de descrição ao nosso site</a></li>
+
+    <h1 class="script">Scripts que foram utilizados</h1>
+    <p> Criamos alguns scripts que estão distribuidos em algumas das paginas, ambas foram feitos em java ou php, usando o programa visual Code, veja abaixo o código e a interface em si junto com o local</p>
+    <section class="carrosel"><h2>Script do carrossel</h2>
+    <img src="img/carusel.png" alt="">
+    <h2>Front End do Carrossel, disponivel em <a href="index.html">Pagina Inicial</a></h2>
+    <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="img/levi.png" alt="Produto 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/denji.png" alt="Produto 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/avenger.png" alt="Produto 3">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-buttons">
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próximo</button>
+      </div>
+    <h1>Script de Filtro (Back-End)</h1>
+    <p>feitos por arquivo em JavaScript e no proprio progama do visualCode</p>
+    <img src="img/filtro.png" alt="">
+    <h2> Filtros, (Front-End) disponivel em <a href="funkos.html">Pagina Funko Pop</a> 
+
+             <a href="miniaturas.html">Pagina de Miniaturas</a></h2>
+    <section class="filters">
+        <label for="category">Categoria:</label>
+        <select id="category">
+          <option value="todos">Todos</option>
+          <option value="anime">Anime</option>
+          <option value="filmes">Filmes</option>
+          <option value="jogos">Jogos</option>
+        </select>
+  
+        <label for="price">Faixa de Preço:</label>
+        <select id="price">
+          <option value="todos">Todos</option>
+          <option value="baixo">Até R$50</option>
+          <option value="medio">R$50 - R$100</option>
+          <option value="alto">Acima de R$100</option>
+        </select>
+      </section>
+
+      <h2>Scripts de cadastro </h2>
+      <p>Observação: o script ainda não está funcionando de maneira eficiente pois não foi aplicado a parte de banco de dados
+        (ambos feitos em PHP e no proprio VisualCode)
+      </p>
+      <img src="img/scriptLogin.png" alt=""> <img src="img/loginphp.png" alt="">
+      <h2>disponivel em <a href="pagina1 index.html">Login</a></h2>
+
+      <h2>Script de Contato </h2>
+      <p>Assim como o script de cadastro este também esta fora do ar, mas seu objetivo é para o usuario ter uma comunicação com o administrador do site em si
+      </p>
+      <img src="img/phpcontato.png" alt="">
+      <h2> Disponivel em <a href="contato.html"> Contato </a></h2>
+    </section>
+
+    <h3>Ao todo esse tem sido um dos pontos mais relevantes na plataforma, além de que tanto o Header como o footer aparecem em ambas as paginas facilitando ao usuario ter multi-acessos sem precisar voltar ao inicio da pagina</h3>
+    <footer>
+        <nav>
+          <ul>
+            <li><a href="index.html">Página Inicial </a></li>
+            <li><a href="quemsomos.html">Quem Somos 
+              Nós</a></li>
+            <li><a href="documentaçao.html">Documentação</a></li>
+            <li><a href="contato.html">contato</a></li>
+          </ul>
+        </nav>
+        <p>&copy; 2023, Gabriel Reis</p>
+      </footer>
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+      
+        let currentItem = 0;
+      
+        function slideRight() {
+          currentItem = (currentItem + 1) % items.length;
+          updateCarousel();
+        }
+      
+        function slideLeft() {
+          currentItem = (currentItem - 1 + items.length) % items.length;
+          updateCarousel();
+        }
+      
+        function updateCarousel() {
+          const translateX = -currentItem * 100;
+          carousel.style.transform = `translateX(${translateX}%)`;
+        }
+      
+        nextBtn.addEventListener('click', slideRight);
+        prevBtn.addEventListener('click', slideLeft);
+      
+        setInterval(slideRight, 5000); 
+      </script>
+</body>
+</html>
